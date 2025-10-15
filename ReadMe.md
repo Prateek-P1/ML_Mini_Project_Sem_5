@@ -1,3 +1,42 @@
+Demo sentiment prediction script
+===============================
+
+This small demo shows how to load a pretrained TF-IDF vectorizer and a Logistic Regression
+model exported with joblib and use them to predict sentiment for input movie reviews.
+
+Files used (expected location: project root)
+- `trained_models_archive/TF_IDF_3_grams_vectorizer.joblib`
+- `trained_models_archive/TF_IDF_3_grams_Logistic_Regression.joblib`
+
+Quick start
+-----------
+
+1. Install Python packages (preferably in a virtual environment):
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the script with a review on the command line:
+
+```bash
+python demo_sentiment.py "This movie was fantastic and fun to watch"
+```
+
+3. Or run interactively:
+
+```bash
+python demo_sentiment.py
+# then type/paste reviews at the prompt
+```
+
+Notes
+-----
+- The script includes a simple preprocessing function similar to the notebook's cleaning.
+- If you want to swap models, update the constants in `demo_sentiment.py` to point to
+  different files inside `trained_models_archive`.
+
+If you want, I can also adapt this script to use a DNN (.h5) model or a different vectorizer.
 # SENTI-MD: Machine Learning for IMDb Sentiment Analysis
 
 ## SENTI-MD - AI-Powered Sentiment Classification
