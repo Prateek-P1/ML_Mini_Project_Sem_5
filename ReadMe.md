@@ -36,7 +36,6 @@ Notes
 - If you want to swap models, update the constants in `demo_sentiment.py` to point to
   different files inside `trained_models_archive`.
 
-If you want, I can also adapt this script to use a DNN (.h5) model or a different vectorizer.
 # SENTI-MD: Machine Learning for IMDb Sentiment Analysis
 
 ## SENTI-MD - AI-Powered Sentiment Classification
